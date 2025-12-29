@@ -6,14 +6,14 @@ The code itself is relatively simple, it took me about 15 minutes to make. It wo
 
 I used the same JSON that was provided. The first thing I did in my code was just to import the JSON.
 
-```
+```python
 with open('example.json', 'r') as f:
     data = json.load(f)
 ```
 
 I decided that the easiest way to do this was going to be to create two arrays. The first array, ```teams```, would just have a list of all the teams: ```['BRO', 'BSN', 'CHC', 'CIN', 'NYG', 'PHI', 'PIT', 'STL']```. This would make it easier to iterate and go team by team, row by row building a dataframe. The second array, ```matchups```, was a 3D array. It would hold every team's win amount against other teams:
 
-```
+```python
 [
     [
         ['BSN', 10], ['CHC', 15], ['CIN', 15], ['NYG', 14], 
@@ -29,7 +29,7 @@ I decided that the easiest way to do this was going to be to create two arrays. 
 
 I used a simple for loop to create this:
 
-```
+```python
 matchups = [] # array #2
 for team in teams:
     team_matchups = []
@@ -42,7 +42,7 @@ The next step is just putting the two steps together in a dataframe. I'm familia
 
 For example: for the Cubs, I would check how many wins they have against the Dodgers. Mark it down, then onto the Braves (Only team of the 8 where I didn't recognized the acronym!). Mark it down, and continnue on. If it's ever the Cubs, put a "-". Continue onto the next row.
 
-```
+```python
 rows = []
 for team in teams:
     row = [team]
@@ -57,7 +57,7 @@ for team in teams:
 
 All that's left is putting all the rows into one dataframe and a few flags to make sure that the code would show all the columns and now throw useless warnings.
 
-```
+```python
 df = pl.DataFrame(rows, schema=['Team'] + teams, orient="row") # orient = "row" gets rid of some warning
 
 pl.Config.set_tbl_cols(-1) # It wasn't showing all of the columns before this
