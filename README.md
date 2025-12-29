@@ -85,7 +85,7 @@ The result looks quite nice!
 └──────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┘
 ```
 
-Please hire me. I like sports. A lot. Baseball, Football, Soccer, Tennis, Motorsport, Basketball, you name it, I probably spend too much time reading useless rumors and arguing with people on the internet using stats from Sports Reference. I do the Immaculate Footy every day (I got all 9 of them once in 9 tries). I promise if you hire me I will never use FanGraphs again. I'll even use bWAR for modern-day catchers.
+This is would be a dream internship for me, and I would be so grateful to have this opportunity. I like sports. A lot. Baseball, Football, Soccer, Tennis, Motorsport, Basketball, you name it, I probably spend too much time reading useless rumors and arguing with people on the internet using stats from Sports Reference. I do the Immaculate Footy every day (I got all 9 of them once in 9 tries). I promise if you hire me I will never use FanGraphs again. I'll even use bWAR for modern-day catchers.
 
 
 
